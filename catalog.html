@@ -91,7 +91,7 @@
                     </fieldset>
 
                     <fieldset class="catalog-filter-group">
-                        <legend class="catalog-filter-title">Стоимость, <span>₽</span>:</legend>
+                        <legend class="catalog-filter-title">Стоимость, <span class="catalog-filter-title-ruble">₽</span>:</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
@@ -107,6 +107,7 @@
                             </li>
 
                         </ul>
+                        <input class="catalog-filter-range" type="range" min="0" max="9000">
                     </fieldset>
 
                     <button class="button" type="submit">Применить</button>
@@ -134,7 +135,7 @@
                 </li>
             </ul>
             <ul class="product-list">
-                <li class="product-card">
+                <li class="product-card-item">
                     <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="#" alt="">
                         <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -144,7 +145,7 @@
                         <dd class="product-card-price">От 4000 ₽</dd>
                     </dl>
                     <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="product-card-button button" type="button">В избранное</button>
+                    <button class="button product-card-button" type="button">В избранное</button>
                     <ul class="product-card-stars">
                         <li><img class="product-star" src="#" alt=""></li>
                         <li><img class="product-star" src="#" alt=""></li>
@@ -154,7 +155,7 @@
                     <output class="rating-field" name="rating">Рейтинг: 8,5</output>
                 </li>
 
-                <li class="product-card">
+                <li class="product-card-item">
                     <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="#" alt="">
                         <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -164,7 +165,7 @@
                         <dd class="product-card-price">От 5000 ₽</dd>
                     </dl>
                     <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="product-card-button button button-favorites" type="button">В избранном</button>
+                    <button class="button product-card-button button-favorites" type="button">В избранном</button>
                     <ul class="product-card-stars">
                         <li><img class="product-star" src="#" alt=""></li>
                         <li><img class="product-star" src="#" alt=""></li>
@@ -174,7 +175,7 @@
                     <output class="rating-field" name="rating">Рейтинг: 9,2</output>
                 </li>
 
-                <li class="product-card">
+                <li class="product-card-item">
                     <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="#" alt="">
                         <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -184,7 +185,7 @@
                         <dd class="product-card-price">От 2500 ₽</dd>
                     </dl>
                     <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="product-card-button button button" type="button">В избранное</button>
+                    <button class="button product-card-button" type="button">В избранное</button>
                     <ul class="product-card-stars">
                         <li><img class="product-star" src="#" alt=""></li>
                         <li><img class="product-star" src="#" alt=""></li>
@@ -194,7 +195,7 @@
                     <output class="rating-field" name="rating">Рейтинг: 6,9</output>
                 </li>
 
-                <li class="product-card">
+                <li class="product-card-item">
                     <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="#" alt="">
                         <h3 class="product-card-title">GreenTree Inn</h3>
@@ -204,17 +205,16 @@
                         <dd class="product-card-price">От 1500 ₽</dd>
                     </dl>
                     <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="product-card-button button button" type="button">В избранное</button>
+                    <button class="button product-card-button" type="button">В избранное</button>
                     <ul class="product-card-stars">
                         <li><img class="product-star" src="#" alt=""></li>
                         <li><img class="product-star" src="#" alt=""></li>
-
 
                     </ul>
                     <output class="rating-field" name="rating">Рейтинг: 5,0</output>
                 </li>
             </ul>
-            <ul class="pagination">
+            <ul class="pagination-list">
                 <li class="pagination-item">
                     <a class="pagination-link pagination-current">1</a>
                 </li>
@@ -259,7 +259,7 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="subscribe-form-email">
                     <label class="visually-hidden">Введите ваш e-mail</label>
-                    <input class="" type="email" name="email" placeholder="Ваш e-mail">
+                    <input class="subscribe-form-field" type="email" name="email" placeholder="Ваш e-mail">
                     <input class="button button-subscribe" type="submit" value="Подписаться">
                 </p>
             </form>
