@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <link rel="stylesheet" href="styles/styles.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,9 +38,8 @@
 
 	<main class="main-index">
 		<h1 class="visually-hidden">Гостиницы в Седоне</h1>
-		<div class="main-picture">
-			<img class="main-picture-welcome" src="images/index/index-background.jpg" width="1200" height="485" alt="Добро пожаловать в великолепное место Седона">
-      <img class="main-picture-slogan" src="images/index/welcome.svg" width="458" height="352" alt="">
+		<div class="main-picture"> <!--Здесь будет 2 фоновых декоративных изображения-->
+      <img class="main-picture-slogan" src="images/index/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепное место Седона">
 		</div>
 		<section class="introduction">
 			<h2 class="visually-hidden">Вступление</h2>
@@ -50,10 +50,10 @@
 		<section class="first-container">
 			<h2 class="visually-hidden">Первая причина</h2>
 			<section class="first-reason-block">
-				<div class="first-reason">
-					<h3 class="first-reason-block-title">Настоящий городок</h3>
-					<span class="first-reason-block-number">— №1 —</span>
-					<p class="first-reason-block-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+				<div class="reason">
+					<h3 class="reason-title">Настоящий городок</h3>
+					<span class="reason-number">— №1 —</span>
+					<p class="reason-description">Седона — не аттракцион для<br> туристов, там течёт своя жизнь</p>
 				</div>
 				<div class="first-container-pic">
 					<img class="first-reason-pic" src="/images/index/first-reason.jpg" width="800" height="384" alt="Фотография города Седона">
@@ -63,21 +63,21 @@
 			<ul class="advantages-list">
 				<li class="advantages-item">
 
-					<span class="advantages-house"></span>
+					<img class="advantages-pic" src="images/index/house.svg" width="74.7" height="72" alt="Винтажные мотели"></img>
 					<h3 class="advantages-title">Жильё</h3>
 					<p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 
 				</li>
 				<li class="advantages-item">
 
-					<span class="advantages-food"></span>
+					<img class="advantages-pic" src="images/index/food.svg" width="74.7" height="72" alt="Легендарные бургеры"></img>
 					<h3 class="advantages-title">Еда</h3>
 					<p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
 
 				</li>
 				<li class="advantages-item">
 
-					<span class="advantages-relic"></span>
+					<img class="advantages-pic" src="images/index/present.svg" width="74.7" height="72" alt="Уникальные сувениры"></img>
 					<h3 class="advantages-title">Сувениры</h3>
 					<p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
 
@@ -91,33 +91,33 @@
 				<div class="second-container-pic">
 					<img class="other-reasons-pic" src="images/index/second-reason.jpg" width="800" height="384" alt="Природа Седоны">
 				</div>
-				<div class="second-reason">
-					<h3 class="second-reason-title">Там есть мост дьявола</h3>
-					<span class="second-reason-number">— №2 —</span>
-					<p class="second-reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+				<div class="reason">
+					<h3 class="reason-title">Там есть мост дьявола</h3>
+					<span class="reason-number">— №2 —</span>
+					<p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 				</div>
 			</section>
 
 			<ul class="advantages-list">
-				<li class="advantages-item">
+				<li class="reason additional-reasons">
 
-					<h3 class="second-advantages-block-title">Небольшая площадь</h3>
-					<span class="second-advantages-block-number">— №3 —</span>
-					<p class="second-advantages-block-description">Все достопримечательности находятся очень близко</p>
-
-				</li>
-				<li class="advantages-item">
-
-					<h3 class="second-advantages-block-title">Красивая дорога</h3>
-					<span class="second-advantages-block-number">— №4 —</span>
-					<p class="second-advantages-block-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					<h3 class="reason-title additional-item-title">Небольшая площадь</h3>
+					<span class="reason-number additional-item-number">— №3 —</span>
+					<p class="reason-description additional-item-description">Все достопримечательности находятся очень близко</p>
 
 				</li>
-				<li class="advantages-item">
+				<li class="reason">
 
-					<h3 class="second-advantages-block-title">Мало туристов</h3>
-					<span class="second-advantages-block-number">— №5 —</span>
-					<p class="second-advantages-block-description">Большинство едет в Гранд Каньон и толпится там</p>
+					<h3 class="reason-title additional-item-title">Красивая дорога</h3>
+					<span class="reason-number additional-item-number">— №4 —</span>
+					<p class="reason-description additional-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+
+				</li>
+				<li class="reason">
+
+					<h3 class="reason-title additional-item-title">Мало туристов</h3>
+					<span class="reason-number additional-item-number">— №5 —</span>
+					<p class="reason-description additional-item-description">Большинство едет в Гранд Каньон и толпится там</p>
 
 				</li>
 			</ul>
@@ -125,10 +125,10 @@
 		<section class="search-hotel">
 			<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 			<p class="search-hotel-question">Заинтересовались?</p>
-			<p class="search-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<p class="search-hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<a class="button button-search-hotel" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
 		</section>
-		<section class="subscribe with-picture">
+		<section class="subscribe-with-picture"> <!--Здесь будет декоративное фоновое изображение-->
 			<h2 class="visually-hidden">Подписаться на рассылку</h2>
 			<p class="subscribe-title">Подпишитесь на рассылку</p>
 			<p class="subscribe-description">Только полезная информация и никакого спама,
@@ -149,12 +149,12 @@
 		<div class="contacts-social-media">
 			<h2 class="visually-hidden">Ссылки на социальные сети</h2>
 			<ul class="navigation-list contacts-user">
-				<li class="contact-item"><a class="navigation-link" href="https://vk.com/htmlacademy"><span
+				<li class="contact-item"><a class="navigation-link vk-link" href="https://vk.com/htmlacademy"><span
               class="visually-hidden">VK</span></a>
 				</li>
-				<li class="contact-item"><a class="navigation-link" href="https://t.me/htmlacademy "><span
+				<li class="contact-item"><a class="navigation-link telegram-link" href="https://t.me/htmlacademy "><span
               class="visually-hidden">Telegram</span></a></li>
-				<li class="contact-item"><a class="navigation-link" href="https://www.youtube.com/user/htmlacademyru"><span
+				<li class="contact-item"><a class="navigation-link youtube-link" href="https://www.youtube.com/user/htmlacademyru"><span
               class="visually-hidden">Youtube</span></a></li>
 			</ul>
 		</div>
