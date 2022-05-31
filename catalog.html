@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -95,7 +96,7 @@
 
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Стоимость, <span
-                                class="catalog-filter-title-ruble">₽</span>:</legend>
+                                class="catalog-filter-title-ruble">₽:</span></legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
@@ -149,8 +150,8 @@
                         <dt class="product-card-name">Гостиница</dt>
                         <dd class="product-card-price">От 4000 ₽</dd>
                     </dl>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="button product-card-button" type="button">В избранное</button>
+                    <a class="button card-button-about" href="#">Подробнее</a>
+                    <button class="button card-button-favorites" type="button">В избранное</button>
                     <ul class="product-card-stars-list">
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
@@ -170,8 +171,8 @@
                         <dt class="product-card-name">Гостиница</dt>
                         <dd class="product-card-price">От 5000 ₽</dd>
                     </dl>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="button product-card-button button-favorites" type="button">В избранном</button>
+                    <a class="button card-button-about" href="#">Подробнее</a>
+                    <button class="button card-button-favorites-add" type="button">В избранном</button>
                     <ul class="product-card-stars-list">
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
@@ -191,8 +192,8 @@
                         <dt class="product-card-name">Гостиница</dt>
                         <dd class="product-card-price">От 2500 ₽</dd>
                     </dl>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="button product-card-button" type="button">В избранное</button>
+                    <a class="button card-button-about" href="#">Подробнее</a>
+                    <button class="button card-button-favorites" type="button">В избранное</button>
                     <ul class="product-card-stars-list">
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
@@ -211,8 +212,8 @@
                         <dt class="product-card-name">Гостиница</dt>
                         <dd class="product-card-price">От 1500 ₽</dd>
                     </dl>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <button class="button product-card-button" type="button">В избранное</button>
+                    <a class="button card-button-about" href="#">Подробнее</a>
+                    <button class="button card-button-favorites" type="button">В избранное</button>
                     <ul class="product-card-stars-list">
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
                         <li class="product-card-stars-item"><span class="product-star"></span></li>
@@ -261,8 +262,8 @@
         </section>
         <section class="subscribe no-picture">
             <h2 class="visually-hidden">Подписаться на рассылку</h2>
-            <p class="subscribe-title">Подпишитесь на рассылку</p>
-            <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+            <p class="subscribe-title catalog-title">Подпишитесь на рассылку</p>
+            <p class="subscribe-description catalog-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="subscribe-form-email">
                     <label class="visually-hidden">Введите ваш e-mail</label>
