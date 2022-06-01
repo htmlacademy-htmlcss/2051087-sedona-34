@@ -25,12 +25,12 @@ body {
 .main-header {}
 
 .navigation-list.navigation-user li:nth-child(1) {
-    background-image: url('/images/header/search.svg');
+    background-image: url('../images/header/search.svg');
     background-repeat: no-repeat;
 }
 
 .navigation-list.navigation-user li:nth-child(2) {
-    background-image: url('/images/header/favorite.svg');
+    background-image: url('../images/header/favorite.svg');
     background-repeat: no-repeat;
 }
 
@@ -47,7 +47,7 @@ body {
 
 /* Стилизация catalog.html */
 .inner-header {
-    background-image: url('/images/catalog/catalog-background.jpg');
+    background-image: url('../images/catalog/catalog-background.jpg');
     background-color: #000000;
     color: #FFFFFF;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@ body {
 }
 
 .product-card-stars-list .product-star {
-    background-image: url('/images/catalog/star.svg');
+    background-image: url('../images/catalog/star.svg');
     background-repeat: no-repeat;
     width: 18px;
     height: 17px;
@@ -166,17 +166,17 @@ body {
 }
 
 .product-page-view-list li:nth-child(1) {
-    background-image: url(/images/catalog/icon-table.svg);
+    background-image: url('../images/catalog/icon-table.svg');
     background-repeat: no-repeat;
 }
 
 .product-page-view-list li:nth-child(2) {
-    background-image: url(/images/catalog/icon-slideshow.svg);
+    background-image: url('../images/catalog/icon-slideshow.svg');
     background-repeat: no-repeat;
 }
 
 .product-page-view-list li:nth-child(3) {
-    background-image: url(/images/catalog/icon-list.svg);
+    background-image: url('../images/catalog/icon-list.svg');
     background-repeat: no-repeat;
 }
 
@@ -209,7 +209,7 @@ body {
 }
 
 .main-picture {
-    background-image: url("/images/index/index-background.jpg");
+    background-image: url('../images/index/index-background.jpg');
     background-color: #000000;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -327,7 +327,7 @@ body {
 }
 
 .subscribe-with-picture {
-    background-image: url('/images/index/index-email-background.jpg');
+    background-image: url('../images/index/index-email-background.jpg');
 
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -375,17 +375,17 @@ body {
 .contacts-social-media {}
 
 .vk-link {
-    background-image: url('/images/footer/vk.svg');
+    background-image: url('../images/footer/vk.svg');
     background-repeat: no-repeat;
 }
 
 .telegram-link {
-    background-image: url('/images/footer/telegram.svg');
+    background-image: url('../images/footer/telegram.svg');
     background-repeat: no-repeat;
 }
 
 .youtube-link {
-    background-image: url('/images/footer/youtube.svg');
+    background-image: url('../images/footer/youtube.svg');
     background-repeat: no-repeat;
 }
 
