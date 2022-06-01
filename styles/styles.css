@@ -51,9 +51,10 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     font-size: 18px;
     line-height: 21px;
+    display: block;
 }
 
 .inner-header-title {
