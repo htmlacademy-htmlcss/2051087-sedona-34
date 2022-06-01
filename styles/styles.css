@@ -159,6 +159,9 @@ body {
 .product-card-stars-list .product-star {
     background-image: url('/images/catalog/star.svg');
     background-repeat: no-repeat;
+    width: 18px;
+    height: 17px;
+    display: inline-block;
 }
 
 .product-page-view-list li:nth-child(1) {
