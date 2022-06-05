@@ -13,23 +13,40 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     background-color: #FFFFFF;
     color: #000000;
 }
+
+.page-container {
+    margin: 0 auto;
+    width: 960px;
+}
+
 img {
     max-width: 100%;
     object-fit: contain;
-  }
-
-.main-header {
-    
 }
+
+.main-header {}
+
+.navigation-list,
+.advantages-list {
+    list-style-type: none;
+
+}
+
 
 .navigation-user li:nth-child(1) {
     background-image: url('../images/header/search.svg');
@@ -50,6 +67,9 @@ img {
     color: inherit;
     background-color: inherit;
     text-align: center;
+}
+.main-container {
+    flex-grow: 1;
 }
 
 /* Стилизация catalog.html */
@@ -131,6 +151,7 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+    padding: 9px 15px 8px;
 
 }
 
@@ -151,6 +172,7 @@ img {
     border: none;
     border-radius: 4px;
     color: #FFFFFF;
+    padding: 9px 15px 8px;
 }
 
 .rating-field {
@@ -329,6 +351,7 @@ img {
     font-size: 20px;
     line-height: 36px;
 }
+
 .subscribe {
     text-align: center;
 }
@@ -338,7 +361,7 @@ img {
 
     background-size: 100% auto;
     background-repeat: no-repeat;
-    
+
 }
 
 .subscribe-title {
@@ -363,9 +386,11 @@ img {
     border-radius: 0px 10px 10px 0px;
     text-transform: uppercase;
 }
+
 .catalog-title {
     color: #000000;
 }
+
 .catalog-description {
     color: #333333;
 }
