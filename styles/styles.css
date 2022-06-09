@@ -563,7 +563,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   text-transform: uppercase;
 }
 
@@ -577,7 +577,7 @@ img {
 
 .input-email {
   background: #F2F2F2;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .page-footer {
