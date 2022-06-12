@@ -29,6 +29,7 @@ body {
   background-color: #E5E5E5;
   color: #000000;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -84,6 +85,7 @@ img {
   flex-wrap: wrap;
   padding: 20px 17px;
 }
+
 .navigation-item {
   margin-right: 34px;
 }
@@ -92,6 +94,7 @@ img {
   max-width: 294px;
   margin-left: auto;
 }
+
 .navigation-user .navigation-link {
   min-height: 66px;
   min-width: 42px;
@@ -406,6 +409,7 @@ img {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
   /* margin: 0 auto; */
   margin-bottom: 31px;
 }
@@ -453,15 +457,20 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .reason-number {
   font-size: 18px;
   line-height: 21px;
 }
+
 .reason-description {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+  margin-top: 30px;
 }
 
 
@@ -479,12 +488,16 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
 
@@ -538,6 +551,7 @@ img {
 
 .search-hotel {
   text-align: center;
+  padding-bottom: 93px;
 }
 
 .search-hotel-question {
@@ -546,10 +560,14 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-top: 91px;
+  margin-bottom: 29px;
 }
 
 .search-hotel-description {
   color: #333333;
+  margin-bottom: 56px;
 }
 
 
@@ -563,10 +581,16 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  display: block;
+  width: 574px;
+  margin: 0 auto;
+  padding: 12px 15px;
 }
 
 .subscribe {
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .subscribe-container {
@@ -588,10 +612,20 @@ img {
   line-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .subscribe-description {
   color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.subscribe-form-email {
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .button-subscribe {
@@ -603,6 +637,7 @@ img {
   line-height: 36px;
   border-radius: 0 10px 10px 0;
   text-transform: uppercase;
+  padding: 12px 15px;
 }
 
 .catalog-title {
@@ -616,10 +651,12 @@ img {
 .input-email {
   background: #F2F2F2;
   border-radius: 10px 0 0 10px;
+  padding: 20px 491px 19px 22px;
 }
 
 .page-footer {
   text-align: center;
+  padding: 40px 70px 30px;
 }
 
 .footer-container {
@@ -637,9 +674,14 @@ img {
 }
 
 .contacts-user {
-  width: 142px;
+  width: 145px;
+  margin: 0;
+  padding: 0;
 }
-
+.contact-item {
+  width: 48px;
+  height: 40px;
+}
 
 .vk-link {
   background-image: url('../images/footer/vk.svg');
@@ -667,6 +709,9 @@ img {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .contacts-author-link {
