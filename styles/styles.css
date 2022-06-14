@@ -98,7 +98,7 @@ img {
   width: 160px;
 }
 
-.navigation-list.navigation-user .navigation-item .navigation-link.button-navigation {
+.navigation-user .navigation-link.button-navigation {
   background-color: #756157;
   border-radius: 4px;
   color: #ffffff;
@@ -209,6 +209,11 @@ img {
 .breadcrumbs-link {
   text-decoration: none;
 
+}
+.catalog-filter-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .catalog-filter-title {
@@ -369,6 +374,10 @@ img {
   width: 18px;
   height: 17px;
   display: inline-block;
+}
+
+.product-card-stars-list {
+  list-style-type: none;
 }
 
 .product-page-view-list li:nth-child(1) {
