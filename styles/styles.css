@@ -63,6 +63,8 @@ img {
 
 .logo {
   display: block;
+  z-index: 1;
+  position: absolute;
 }
 
 
@@ -312,6 +314,7 @@ img {
   width: 1057px;
   margin-top: 50px;
   margin-bottom: 56px;
+  align-items: center;
 }
 
 .main-inner-product-page-title {
@@ -320,11 +323,15 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   width: 338px;
+  margin: 0;
   margin-right: 191px;
 }
 
 .select-control {
   width: 290px;
+  align-self: stretch;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .product-page-view-list {
