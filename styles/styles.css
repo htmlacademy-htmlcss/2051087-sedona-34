@@ -152,6 +152,7 @@ img {
 }
 
 
+
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -208,12 +209,34 @@ img {
 .breadcrumbs-item {
   margin-right: 25px;
 
+
 }
+
 
 .breadcrumbs-link {
   text-decoration: none;
 
 }
+
+.breadcrumbs-item:first-child {
+  position: relative;
+}
+
+.breadcrumbs-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* .breadcrumbs .breadcrumbs-item:first-child .breadcrumbs-link {
+  background-image: url('../images/catalog/house-breadcrumbs.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+} */
 
 .catalog-filter {
   display: flex;
@@ -356,6 +379,7 @@ img {
   margin-right: 8px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  position: relative;
 }
 
 .product-page-view-item:last-child {
@@ -502,19 +526,40 @@ img {
   margin-right: 6px;
 }
 
-.product-page-view-list li:nth-child(1) {
+.product-page-view-list li:nth-child(1) .button-view {
   background-image: url('../images/catalog/icon-table.svg');
   background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
-.product-page-view-list li:nth-child(2) {
+.product-page-view-list li:nth-child(2) .button-view {
   background-image: url('../images/catalog/icon-slideshow.svg');
   background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
-.product-page-view-list li:nth-child(3) {
+.product-page-view-list li:nth-child(3) .button-view {
   background-image: url('../images/catalog/icon-list.svg');
   background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .pagiantion-container {
@@ -580,6 +625,8 @@ img {
 
 .pagination-current {
   color: #000000;
+  background-color: #E5E5E5;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .select-pages-description {
@@ -911,21 +958,21 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 } */
-.navigation-link.vk-link {
-  padding: 13px 12px;
-}
-
-.navigation-link.telegram-link {
-  padding: 12px 15px;
-}
+.navigation-link.vk-link,
+.navigation-link.telegram-link,
 .navigation-link.youtube-link {
-  padding: 11px 13px;
+  position: relative;
 }
 
 .vk,
 .telegram,
 .youtube {
-  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .contacts-phone {
