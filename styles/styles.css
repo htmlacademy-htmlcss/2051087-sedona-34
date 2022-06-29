@@ -327,6 +327,9 @@ img {
   justify-content: center;
   align-items: center;
   font-weight: 400;
+  padding-bottom: 4px;
+  padding-top: 2px;
+  box-sizing: border-box;
 }
 
 
@@ -404,11 +407,11 @@ img {
   position: absolute;
 } */
 
-.breadcrumbs-item:first-child {
+.breadcrumbs-item {
   position: relative;
 }
 
-.breadcrumbs-item:first-child::after {
+.breadcrumbs-item:not(:last-child)::after {
   content: url('../images/catalog/strelka.svg');
   position: absolute;
 
@@ -418,6 +421,19 @@ img {
   left: 25px;
 }
 
+.breadcrumbs-item:not(:first-child):not(:last-child)::after {
+  content: url('../images/catalog/strelka.svg');
+  position: absolute;
+  width: 5px;
+  height: 7px;
+  top: -1px;
+  left: 83px;
+}
+
+.breadcrumbs-item:not(:first-child) {
+  margin-right: 25px;
+}
+
 .breadcrumbs-icon {
   position: absolute;
   top: 0;
@@ -425,6 +441,7 @@ img {
   left: 0;
   bottom: 0;
   margin: auto;
+  color: #fff;
 }
 
 /* .breadcrumbs .breadcrumbs-item:first-child .breadcrumbs-link {
@@ -433,6 +450,29 @@ img {
   background-position: center;
 
 } */
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-icon:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-icon:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-icon:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .catalog-filter {
   display: flex;
@@ -557,6 +597,10 @@ img {
   align-self: stretch;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+.control-input:disabled {
+  background-color: #E5E5E5;
 }
 
 .product-page-view-list {
@@ -894,6 +938,7 @@ transform: rotate(180deg);
   background-repeat: no-repeat;
   padding: 51px 371px 82px;
   box-sizing: border-box;
+  position: relative;
   /* text-align: center; */
 }
 
@@ -901,6 +946,18 @@ transform: rotate(180deg);
   display: block;
   margin: 0 auto;
 }
+
+.decoration {
+  position: absolute;
+  background-image: url('../images/index/divider.svg');
+  left: 0%;
+  right: 0%;
+  top: 1%;
+  bottom: 0%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 
 .introduction {
   width: 1200px;
@@ -1160,6 +1217,10 @@ transform: rotate(180deg);
   border-radius: 10px 0 0 10px;
   padding: 20px 491px 19px 22px;
   border: none;
+}
+
+.input-email:disabled {
+  background-color: #E5E5E5;
 }
 
 .page-footer {
