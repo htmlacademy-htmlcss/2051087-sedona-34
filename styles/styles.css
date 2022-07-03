@@ -658,6 +658,16 @@ img {
   align-self: stretch;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  font-size: 18px;
+  color: #333333;
+  background-color: #FFFFFF;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  appearance: none;
+  background-image: url('../images/catalog/strekla_selector_black.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 48px;
 }
 
 .select-control:hover {
