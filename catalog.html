@@ -109,19 +109,30 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="text" value="0" placeholder="от"><span
+                        <input class="control-input-min" type="text" value="0" placeholder="от"><span
                           class="visually-hidden">Минимальная стоимость бронирования</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="text" value="9000" placeholder="до"><span
+                        <input class="control-input-max" type="text" value="9000" placeholder="до"><span
                           class="visually-hidden">Максимальная стоимость бронирования</span>
                       </label>
                     </li>
 
                   </ul>
-                  <input class="catalog-filter-range" type="range" min="0" max="9000">
+                  <!-- <input class="catalog-filter-range" type="range" min="0" max="9000"> -->
+                  <div class="range">
+                    <div class="range-bar" style="width: 217px; right: 60px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
                 </fieldset>
                 <div class="group-buttons">
                   <button class="button button-apply" type="submit">Применить</button>
