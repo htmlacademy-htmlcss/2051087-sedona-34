@@ -488,7 +488,7 @@ img {
 
 .catalog-filter-group {
   display: flex;
-  margin-right: 77px;
+  margin-right: 70px;
   flex-direction: column;
   border: none;
   padding: 0;
@@ -496,7 +496,7 @@ img {
 
 .catalog-filter-group:nth-of-type(2) {
   display: flex;
-  margin-right: 177px;
+  margin-right: 175px;
   flex-direction: column;
   border: none;
   padding: 0;
@@ -563,17 +563,21 @@ img {
   cursor: pointer;
   border: none;
 }
+
 .range-toggle:hover {
-  background-color:antiquewhite;
+  background-color: antiquewhite;
 }
+
 .range-toggle:active,
 .range-toggle:focus {
   outline: 3px solid darkgoldenrod;
 }
+
 .toggle-min {
   top: -8px;
   left: -10px;
 }
+
 .toggle-max {
   top: -8px;
   right: -10px;
@@ -752,6 +756,84 @@ img {
   text-align: right;
   color: #FFFFFF;
   opacity: 0.3;
+}
+
+.catalog-filter-group:first-of-type .control,
+.catalog-filter-group:nth-of-type(2) .control {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+}
+
+
+.catalog-filter-group:first-of-type .control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+}
+
+.catalog-filter-group:nth-of-type(2) .control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.catalog-filter-group:first-of-type .control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-group:first-of-type .control:hover {
+  cursor: pointer;
+}
+
+.catalog-filter-group:first-of-type .control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.catalog-filter-group:first-of-type .control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-filter-group:nth-of-type(2) .control:focus .control-mark {
+  background-color: #FFFFFF;
+  outline: 3px solid #83B3D3;
+}
+
+.catalog-filter-group:nth-of-type(2) .control:hover {
+  cursor: pointer;
+}
+
+.control:disabled + .control-mark {
+  border-color: green;
+}
+
+.control-input[type='checkbox']:checked + .control-mark::before {
+  content: url('../images/catalog/galka.svg');
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 4px;
+  right: 0;
+}
+
+.control-input[type='radio']:checked + .control-mark::before {
+  content: '';
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
 .product-page-view-list {
