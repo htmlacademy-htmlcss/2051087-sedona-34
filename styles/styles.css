@@ -1768,6 +1768,9 @@ transform: rotate(180deg);
   font-size: 18px;
   line-height: 21px;
   height: 50px;
+  background-image: url('../images/index-modal/date.svg');
+  background-repeat: no-repeat;
+  background-position: center right 19px;
 }
 
 .group-container .field-form-group-people:first-child {
@@ -1799,6 +1802,10 @@ transform: rotate(180deg);
 
 .choose-people.children {
   margin-left: auto;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 .search-button {
