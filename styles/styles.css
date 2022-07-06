@@ -688,10 +688,23 @@ img {
   background-position: right 20px center;
   padding-right: 48px;
   font: inherit;
+  cursor: pointer;
 }
 
 .select-control:hover {
-  cursor: pointer;
+  outline: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  outline: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  outline: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .control-input-min,
@@ -828,7 +841,7 @@ img {
   cursor: pointer;
 }
 
-.catalog-filter-group:first-of-type .control:focus .control-mark {
+.catalog-filter-group:first-of-type .control:focus-within .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
@@ -1278,6 +1291,8 @@ transform: rotate(180deg);
 
 .first-reason-pic {
   vertical-align: middle;
+  height: 100%;
+  object-fit: fill;
 }
 
 .reason {
@@ -1500,6 +1515,7 @@ transform: rotate(180deg);
   padding: 20px 491px 19px 22px;
   border: none;
   font: inherit;
+  cursor: pointer;
 }
 
 .input-email:disabled {
@@ -1684,6 +1700,10 @@ transform: rotate(180deg);
   display: flex;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1738,9 +1758,7 @@ transform: rotate(180deg);
   align-items: center;
 }
 
-.field-form-group:nth-of-type(2) .date {
-  margin-right: 36px;
-}
+
 
 .date,
 .age {
@@ -1753,7 +1771,14 @@ transform: rotate(180deg);
 
 .date {
   margin-right: 42px;
+
 }
+
+.date.date-leave {
+  margin-right: 36px;
+}
+
+
 
 .form-input {
   background-color: #F2F2F2;
@@ -1771,6 +1796,29 @@ transform: rotate(180deg);
   background-image: url('../images/index-modal/date.svg');
   background-repeat: no-repeat;
   background-position: center right 19px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.form-input:hover {
+  background-color: #E6E6E6;
+}
+
+.form-input:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.form-input:active {
+  background: #FFFFFF;
+  outline: 2px solid #000000;
+}
+
+.field-form-group {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
 }
 
 .group-container .field-form-group-people:first-child {
@@ -1785,6 +1833,7 @@ transform: rotate(180deg);
 .more-button {
   width: 44px;
   border: none;
+  cursor: pointer;
 }
 
 .less-button {
@@ -1821,6 +1870,22 @@ input[type='date']::-webkit-calendar-picker-indicator {
   line-height: 36px;
   color: #FFFFFF;
   margin-top: 40px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #68A2CA;
+}
+
+.search-button:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.search-button:focus:active {
+  background-color: #68A2CA;
+  opacity: 0.3;
+  outline: none;
 }
 
 .amount-input {
@@ -1854,4 +1919,97 @@ input[type='date']::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.tooltip-toggle {
+  background-color: #83B3D3;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 25px;
+  height: 9px;
+  display: block;
+  color: #FFFFFF;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 100%;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  box-sizing: border-box;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+.tooltip-text::after {
+  content: '';
+  background-image: url('../images/index-modal/triangle\ 1.svg');
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.error {
+  display: block;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+  margin: 0;
+  margin-left: 155px;
+  bottom: 341px;
+  position: absolute;
+}
+
+.apply {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0;
+  margin-left: 155px;
+  position: absolute;
+  bottom: 245px;
 }
