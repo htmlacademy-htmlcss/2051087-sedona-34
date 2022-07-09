@@ -124,6 +124,7 @@ img {
   left: 17px;
   right: 1px;
   width: 68px;
+  z-index: 1;
 }
 
 .navigation-item-inner-current {
@@ -140,6 +141,18 @@ img {
   left: 17px;
   right: 1px;
   width: 93px;
+}
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link.button-navigation:hover {
@@ -294,23 +307,41 @@ img {
 }
 
 
-.navigation-user li:nth-child(1) .navigation-link {
+/* .navigation-user li:nth-child(1) .navigation-link {
   background-image: url('../images/header/search.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 18px;
-}
+} */
 
 .navigation-user li:nth-child(2) .navigation-link {
-  background-image: url('../images/header/favorite.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 18px 17px;
   position: relative;
 
 }
 
+.loupe-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
 
+.navigation-link:hover .loupe-icon {
+  color: #756157;
+}
+
+.navigation-link:focus .loupe-icon {
+  color: #756157;
+}
+
+.navigation-link:active .loupe-icon {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.heart-icon {
+  width: 18px;
+  height: 17px;
+  display: block;
+}
 
 .navigation-user li:nth-child(2) .navigation-link::before {
 
@@ -1702,6 +1733,7 @@ transform: rotate(180deg);
 
 .modal-container-close {
   display: none;
+  z-index: 2;
 }
 
 .modal {
@@ -1806,7 +1838,7 @@ transform: rotate(180deg);
 
 
 
-.form-input {
+.form-input:placeholder-shown {
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
@@ -1824,6 +1856,27 @@ transform: rotate(180deg);
   background-position: center right 19px;
   opacity: 0.6;
   cursor: pointer;
+}
+
+.form-input:not(:placeholder-shown) {
+  border: none;
+  border-radius: 4px;
+  padding: 15px 19px;
+  width: 420px;
+  box-sizing: border-box;
+  height: 50px;
+  background-image: url('../images/index-modal/date.svg');
+  background-repeat: no-repeat;
+  background-position: center right 19px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  outline: 2px solid #000000;
+  color: #000000;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .form-input:hover {
@@ -1962,7 +2015,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
   outline: none;
 }
 
-.amount-input {
+.amount-input,
+.amount-input::placeholder {
   border: none;
   background-color: inherit;
   width: 44px;
@@ -1973,6 +2027,11 @@ input[type='date']::-webkit-calendar-picker-indicator {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.amount-input:hover {
+  box-shadow: 1px 1px 10px black;
+  transform: rotate(360deg) scale(1.1);
 }
 
 .choose-people {
@@ -2087,4 +2146,22 @@ input[type='date']::-webkit-calendar-picker-indicator {
   margin-left: 155px;
   position: absolute;
   bottom: 245px;
+}
+
+.less-button[type='button']:focus .less-button-icon {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
 }
