@@ -454,7 +454,7 @@ img {
   width: 5px;
   height: 7px;
   top: -12px;
-  left: 26px;
+  left: 25px;
 }
 
 .breadcrumbs-item:not(:first-child):not(:last-child)::after {
@@ -518,7 +518,7 @@ img {
 
 .catalog-filter-group {
   display: flex;
-  margin-right: 70px;
+  margin-right: 65px;
   flex-direction: column;
   border: none;
   padding: 0;
@@ -551,6 +551,8 @@ img {
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 30px;
+  margin-left: -1px;
+  text-transform: capitalize;
 }
 
 .catalog-filter-group:nth-of-type(3) .catalog-filter-title {
@@ -558,7 +560,7 @@ img {
 }
 
 .catalog-filter-group:nth-of-type(3) .catalog-filter-list {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   display: flex;
   width: 287px;
   height: 48px;
@@ -688,7 +690,7 @@ img {
   justify-content: space-between;
   margin: 0 auto;
   width: 1057px;
-  margin-top: 50px;
+  margin-top: 53px;
   margin-bottom: 56px;
   align-items: center;
 }
@@ -716,10 +718,11 @@ img {
   appearance: none;
   background-image: url('../images/catalog/strekla_selector_black.svg');
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   padding-right: 48px;
   font: inherit;
   cursor: pointer;
+  padding-left: 17px;
 }
 
 .select-control:hover {
@@ -840,7 +843,7 @@ img {
 .catalog-filter-group:nth-of-type(2) .control {
   position: relative;
   display: block;
-  padding-left: 34px;
+  padding-left: 37px;
 }
 
 
@@ -977,6 +980,7 @@ img {
   justify-self: start;
   row-gap: 16px;
   align-self: baseline;
+  padding-top: 18px;
 }
 
 .product-card-link {
@@ -1049,6 +1053,11 @@ img {
   background-color: #82B3D3;
   border: none;
   border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .card-button-favorites-add {
@@ -1057,6 +1066,11 @@ img {
   border-radius: 4px;
   color: #FFFFFF;
   padding: 9px 15px 8px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .rating-field {
@@ -1133,13 +1147,23 @@ img {
 .pagiantion-container {
   width: 1057px;
   margin: 0 auto;
+  position: relative;
+}
+
+.pagiantion-container::after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #E6E6E6;
+  top: -29px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .pagination-inner-container {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #E6E6E6;
-  padding-top: 30px;
+  padding-top: 1px;
 }
 
 /* .pagination-inner-container::after {
@@ -1210,6 +1234,25 @@ transform: rotate(180deg);
 
 }
 
+.select-pages {
+  display: block;
+  margin: 0;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 160px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  color: #333333;
+  margin-left: 51px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 18px;
+}
+
 .select-pages:hover {
   cursor: pointer;
 }
@@ -1243,6 +1286,8 @@ transform: rotate(180deg);
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  align-items: center;
+  display: flex;
 }
 
 .select-pages-description:hover {
@@ -1375,7 +1420,7 @@ transform: rotate(180deg);
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 26px;
   margin-bottom: 30px;
 }
 
@@ -1450,13 +1495,13 @@ transform: rotate(180deg);
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-top: 91px;
+  margin-top: 90px;
   margin-bottom: 29px;
 }
 
 .search-hotel-description {
   color: #333333;
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 }
 
 
@@ -1474,11 +1519,18 @@ transform: rotate(180deg);
   width: 574px;
   margin: 0 auto;
   padding: 12px 15px;
+  box-sizing: border-box;
 }
 
 .subscribe {
   text-align: center;
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.subscribe.no-picture {
+  text-align: center;
+  padding-top: 119px;
   padding-bottom: 94px;
 }
 
@@ -1519,17 +1571,21 @@ transform: rotate(180deg);
 }
 
 .button-subscribe {
+  min-width: 200px;
   color: #FFFFFF;
   background-color: #82B3D3;
   border-color: #82B3D3;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
   border-radius: 0 10px 10px 0;
   text-transform: uppercase;
   padding: 12px 15px;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .catalog-title {
@@ -1543,19 +1599,34 @@ transform: rotate(180deg);
 .input-email {
   background: #F2F2F2;
   border-radius: 10px 0 0 10px;
-  padding: 20px 491px 19px 22px;
   border: none;
   font: inherit;
   cursor: pointer;
+  padding-left: 22px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  box-sizing: border-box;
+  width: 600px;
+  height: 60px;
 }
 
 .input-email:disabled {
   background-color: #E5E5E5;
 }
 
+.input-email::placeholder {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+}
+
 .page-footer {
   text-align: center;
-  padding: 45px 70px 30px;
+  padding: 41px 70px 30px;
 }
 
 .footer-container {
