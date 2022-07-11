@@ -1935,11 +1935,7 @@ transform: rotate(180deg);
   font-size: 18px;
   line-height: 21px;
   height: 50px;
-  background-image: url('../images/index-modal/date.svg');
-  background-repeat: no-repeat;
-  background-position: center right 19px;
   opacity: 0.6;
-  cursor: pointer;
 }
 
 .form-input:not(:placeholder-shown) {
@@ -1981,23 +1977,30 @@ transform: rotate(180deg);
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  position: relative;
 
 }
 
 .group-container .field-form-group-people:first-child {
-  margin-right: 64px;
+  margin-right: 56px;
+  display: flex;
+  align-items: center;
 }
 
 .group-container .field-form-group-people:nth-of-type(2) {
   margin-right: 43px;
+  display: flex;
+  align-items: center;
 }
 
 .less-button,
 .more-button {
-  width: 44px;
+  width: 34px;
   border: none;
   cursor: pointer;
+  height: 21px;
 }
+
 
 .less-button-icon,
 .more-button-icon {
@@ -2032,8 +2035,8 @@ transform: rotate(180deg);
   cursor: pointer;
 }
 
-.less-button-icon:focus,
-.more-button-icon:focus {
+.less-button:focus,
+.more-button:focus {
   fill: #000000;
   opacity: 1;
   cursor: pointer;
@@ -2061,11 +2064,46 @@ transform: rotate(180deg);
 } */
 
 .choose-people.children {
-  margin-left: auto;
+  margin-left: 50px;
 }
 
 input[type='date']::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+
+.button-calendar {
+  position: absolute;
+  right: 11px;
+  width: 31px;
+  height: 24px;
+  background-color: none;
+  background: none;
+  cursor: pointer;
+  background-image: url(../images/index-modal/date.svg);
+  background-repeat: no-repeat;
+  top: 13px;
+  background-position: center right 8px;
+  opacity: 0.6;
+  border: none;
+  background-size: 15px 15px;
+  fill: #000000;
+}
+
+.button-calendar:hover {
+  opacity: 1;
+}
+
+.button-calendar:hover .form-input:hover {
+  background-color: #E6E6E6;
+}
+
+.button-calendar:focus {
+  opacity: 1;
+}
+
+.button-calendar:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 .search-button {
@@ -2134,7 +2172,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 .adult-people {
-  margin-right: 56px;
+  margin-left: 64px;
 }
 
 .group-container {
@@ -2200,8 +2238,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
   position: absolute;
   width: 25px;
   height: 25px;
-  margin-top: 3px;
-  margin-left: 5px;
+  margin-top: -11px;
+  margin-left: 7px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -2219,7 +2257,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   color: #FF5757;
   margin: 0;
   margin-left: 155px;
-  bottom: 341px;
+  bottom: 322px;
   position: absolute;
 }
 
@@ -2233,14 +2271,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
   margin: 0;
   margin-left: 155px;
   position: absolute;
-  bottom: 245px;
+  bottom: 232px;
 }
-
-.less-button[type='button']:focus .less-button-icon {
-  outline: 3px solid #83B3D3;
-  border-radius: 4px;
-}
-
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
