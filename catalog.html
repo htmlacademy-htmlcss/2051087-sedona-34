@@ -19,7 +19,7 @@
 
           <a class="main-header-logo-link" href="index.html">
             <img class="logo" src="./images/header/logo.svg" width="139" height="70"
-              alt="Логотип сайта HTML Academy: Седона">
+              alt="Логотип сайта HTML Academy: Седона.">
           </a>
 
 
@@ -31,14 +31,21 @@
           </ul>
 
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item"><a class="navigation-link" href="#"><span
-                  class="visually-hidden">Поиск</span></a>
+            <li class="navigation-item"><a class="navigation-link" href="#"><svg class="loupe-icon" width="19"
+                  height="19" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m18.159 17.05-3.711-3.7c1.003-1.3 1.705-3 1.705-4.9 0-4.4-3.61-8-8.023-8C3.718.45.107 4.15.107 8.55c0 4.4 3.61 8 8.023 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.404-1.5ZM8.13 14.55c-3.31 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z" />
+                </svg><span class="visually-hidden">Поиск</span></a>
             </li>
-            <li class="navigation-item"><a class="navigation-link" href="#"><span class="visually-hidden">Избранные
+            <li class="navigation-item"><a class="navigation-link navigation-user-link" href="#"><svg class="heart-icon"
+                  width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.577 17c-.301 0-.602-.1-.803-.4-5.415-6.1-6.719-7.5-7.02-7.9C1.052 7.8.651 6.6.651 5.4c0-3 2.407-5.4 5.516-5.4 1.304 0 2.507.5 3.51 1.3C10.68.5 11.983 0 13.187 0c3.008 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3ZM3.56 7.5c.3.4 3.51 4 6.117 6.9l6.218-7c.5-.5.701-1.2.701-2 0-1.8-1.504-3.3-3.309-3.3-1.003 0-2.006.5-2.708 1.3-.3.3-.601.4-.902.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.301 1.6.703 2.1-.1 0-.1 0 0 0Z" />
+                </svg><span class="visually-hidden">Избранные
                   гостиницы</span></a></li>
-            <li class="navigation-item"><a class="navigation-link button-navigation" href="#">Хочу сюда!<span
+            <li class="navigation-item"><button class="navigation-link button-navigation" type="button">Хочу сюда!<span
                   class="visually-hidden">Поиск
-                  гостиницы</span></a></li>
+                  гостиницы</span></button></li>
           </ul>
         </nav>
       </header>
@@ -66,17 +73,23 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                        <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                        <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                        <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -87,17 +100,25 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="hotel" checked>Гостиница
+                        <input class="control-input visually-hidden" type="radio" name="product-group" value="hotel"
+                          checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="motel">Мотель
+                        <input class="control-input visually-hidden" type="radio" name="product-group" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="apartaments">Апартаменты
+                        <input class="control-input visually-hidden" type="radio" name="product-group"
+                          value="apartaments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -109,19 +130,30 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="text" value="0" placeholder="от"><span
+                        <input class="control-input-min" type="number" value="0" placeholder="от"><span
                           class="visually-hidden">Минимальная стоимость бронирования</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="text" value="9000" placeholder="до"><span
+                        <input class="control-input-max" type="number" value="9000" placeholder="до"><span
                           class="visually-hidden">Максимальная стоимость бронирования</span>
                       </label>
                     </li>
 
                   </ul>
-                  <input class="catalog-filter-range" type="range" min="0" max="9000">
+                  <!-- <input class="catalog-filter-range" type="range" min="0" max="9000"> -->
+                  <div class="range">
+                    <div class="range-bar" style="width: 217px; right: 60px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
                 </fieldset>
                 <div class="group-buttons">
                   <button class="button button-apply" type="submit">Применить</button>
@@ -156,7 +188,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-image" src="./images/catalog/catalog-2.jpg" width="300" height="211"
-                    alt="Вид из гостиницы Amara Resort & Spa">
+                    alt="Вид из гостиницы Amara Resort & Spa.">
                   <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
                 <dl class="product-card-list">
@@ -177,7 +209,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-image" src="./images/catalog/catalog-3.jpg" width="300" height="211"
-                    alt="Вид из гостиницы Villas at Poco Diablo">
+                    alt="Вид из гостиницы Villas at Poco Diablo.">
                   <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <dl class="product-card-list">
@@ -198,7 +230,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-image" src="./images/catalog/catalog-4.jpg" width="300" height="211"
-                    alt="Вид из гостиницы Desert Quail Inn">
+                    alt="Вид из гостиницы Desert Quail Inn.">
                   <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
                 <dl class="product-card-list">
@@ -218,7 +250,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-image" src="./images/catalog/catalog-1.jpg" width="300" height="211"
-                    alt="Вид из гостиницы GreenTree Inn">
+                    alt="Вид из гостиницы GreenTree Inn.">
                   <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
                 <dl class="product-card-list">
@@ -261,7 +293,7 @@
               </ul>
               <div class="select-pages-container">
                 <label class="select-pages-description">Гостиниц на странице:
-                  <select class="select-pages">
+                  <select class="select-control select-pages">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -289,7 +321,7 @@
               <p class="subscribe-form-email">
                 <label class="visually-hidden">Введите ваш e-mail</label>
                 <input class="input-email" type="email" name="email" placeholder="Ваш e-mail" required>
-                <input class="button button-subscribe" type="submit" value="Подписаться">
+                <button class="button button-subscribe" type="submit">Подписаться</button>
               </p>
             </form>
           </div>
