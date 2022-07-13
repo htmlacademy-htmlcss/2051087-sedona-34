@@ -311,9 +311,8 @@ img {
 
 }
 
-.navigation-user li:nth-child(2) .navigation-link {
+.navigation-user-link {
   position: relative;
-
 }
 
 .loupe-icon {
@@ -1406,11 +1405,11 @@ img {
   object-fit: fill;
 }
 
-.second-container .advantages-list .reason {
+.additional-reasons {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.second-container .advantages-list .reason:nth-child(2n) {
+.additional-reasons:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
